@@ -1,6 +1,6 @@
 = Document Template
-:author: {name}
-:email: {email}
+:author: Taylor Holland
+:email: taylor.holland@cox.com
 :appendix: 
 :sectnums:
 :toc: value
@@ -89,6 +89,7 @@ These are example diagrams that can be used.
 
 === Classic Block Diagram
 .Diagram
+
 [plantuml, digram-classes, png]
 ....
 @startuml
@@ -105,6 +106,7 @@ DiagramBlock <|-- PlantUmlBlock
 
 === Breakdown Structure
 .Diagram
+
 [plantuml, wbs, svg]
 ....
 @startwbs
@@ -125,6 +127,7 @@ skinparam monochrome true
 
 === Component Diagram with Legend
 .Diagram
+
 [plantuml, digram-classes, png]
 ....
 @startuml
@@ -158,4 +161,5 @@ Rel(ma, sign, "Uses", "JSON/HTTPS")
 Rel(ma, accounts, "Uses", "JSON/HTTPS")
 @enduml
 ....
+
 Additional diagram examples may be found on the https://kroki.io/examples.html#use-case[Kroki website].
