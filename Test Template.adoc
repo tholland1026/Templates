@@ -1,0 +1,161 @@
+= Document Template
+:author: {name}
+:email: {email}
+:appendix: 
+:sectnums:
+:toc: value
+<<<
+
+== Introduction
+This section will be used to give a brief background on the topic being discussed in the document.
+
+=== Objective
+Team members will be able to use this document as a template to create similar ones in the future.
+Team memebers will also be able to use the tables, diagrams, and links in this document to build their own examples.
+
+=== Purpose
+This document works as a template for future documents.
+<<<    
+
+== Section 1
+Content for the first section will go here.
+
+=== Subsection 1
+If you need a subsection, it will go here.
+
+==== Another subsection 1
+Keep following this format for additional subsections.
+When you want to go up a level to the previous section, use the corresponding number of equal signs.
+<<<
+
+== Tables
+These are example tables that can be built into a document. +
+
+=== Table with no column names
+.Example
+[cols=2*]
+|===
+|Firefox
+|Web Browser
+
+|Ruby
+|Programming Language
+
+|TorqueBox
+|Application Server
+|===
+
+=== Table with column names
+.Example
+[cols=2*,options=header]
+|===
+|Name
+|Group
+
+|Firefox
+|Web Browser
+
+|Ruby
+|Programming Language
+
+|TorqueBox
+|Application Server
+|===
+
+=== Table with column names AND a list in a box
+.Example
+[cols="2,3,5"]
+|===
+|Name |Group |Description
+
+|Firefox
+|Web Browser
+a|Mozilla Firefox is an open-source web browser.
+It's designed for:
+
+* standards compliance,
+* performance and
+* portability
+
+|Ruby
+|Programming Language
+|A programmer's best friend.
+|===
+<<<
+
+== Diagrams
+
+These are example diagrams that can be used.
+
+=== Classic Block Diagram
+.Diagram
+[plantuml, digram-classes, png]
+....
+@startuml
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+@enduml
+....
+
+=== Breakdown Structure
+.Diagram
+[plantuml, wbs, svg]
+....
+@startwbs
+skinparam monochrome true
+* Business Process Modelling WBS
+** Launch the project
+*** Complete Stakeholder Research
+*** Initial Implementation Plan
+** Design phase
+*** Model of AsIs Processes Completed
+**** Model of AsIs Processes Completed1
+**** Model of AsIs Processes Completed2
+*** Measure AsIs performance metrics
+*** Identify Quick Wins
+** Complete innovate phase
+@endwbs
+....
+
+=== Component Diagram with Legend
+.Diagram
+[plantuml, digram-classes, png]
+....
+@startuml
+!include C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Component diagram for Internet Banking System - API Application
+
+Container(spa, "Single Page Application", "javascript and angular", "Provides all the internet banking functionality to customers via their web browser.")
+Container(ma, "Mobile App", "Xamarin", "Provides a limited subset ot the internet banking functionality to customers via their mobile mobile device.")
+ContainerDb(db, "Database", "Relational Database Schema", "Stores user registration information, hashed authentication credentials, access logs, etc.")
+System_Ext(mbs, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+Container_Boundary(api, "API Application") {
+    Component(sign, "Sign In Controller", "MVC Rest Controlle", "Allows users to sign in to the internet banking system")
+    Component(accounts, "Accounts Summary Controller", "MVC Rest Controlle", "Provides customers with a summory of their bank accounts")
+    Component(security, "Security Component", "Spring Bean", "Provides functionality related to singing in, changing passwords, etc.")
+    Component(mbsfacade, "Mainframe Banking System Facade", "Spring Bean", "A facade onto the mainframe banking system.")
+
+    Rel(sign, security, "Uses")
+    Rel(accounts, mbsfacade, "Uses")
+    Rel(security, db, "Read & write to", "JDBC")
+    Rel(mbsfacade, mbs, "Uses", "XML/HTTPS")
+}
+
+Rel(spa, sign, "Uses", "JSON/HTTPS")
+Rel(spa, accounts, "Uses", "JSON/HTTPS")
+
+Rel(ma, sign, "Uses", "JSON/HTTPS")
+Rel(ma, accounts, "Uses", "JSON/HTTPS")
+@enduml
+....
+Additional diagram examples may be found on the https://kroki.io/examples.html#use-case[Kroki website].
