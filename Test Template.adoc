@@ -90,7 +90,7 @@ These are example diagrams that can be used.
 === Classic Block Diagram
 .Diagram
 
-[plantuml, digram-classes, png]
+[plantuml, wbs, svg]
 ....
 @startuml
 class BlockProcessor
@@ -128,7 +128,7 @@ skinparam monochrome true
 === Component Diagram with Legend
 .Diagram
 
-[plantuml, digram-classes, png]
+[plantuml, wbs, svg]
 ....
 @startuml
 !include C4_Component.puml
