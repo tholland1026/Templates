@@ -24,7 +24,7 @@ image::images/Create Issue.jpg[Create Issue]
 
 image::images/Create Issue 2.jpg[Summary]
 
-.ii. Provide a label(s):
+.ii. Provide label(s):
  * Suggestion
  * Requirement
  * Open Question
