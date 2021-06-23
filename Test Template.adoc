@@ -163,5 +163,3 @@ Rel(ma, accounts, "Uses", "JSON/HTTPS")
 ....
 
 Additional diagram examples may be found on the https://kroki.io/examples.html#use-case[Kroki website].
-
-image:images/JIRA Startup
