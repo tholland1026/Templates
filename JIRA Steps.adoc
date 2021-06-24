@@ -4,34 +4,35 @@ You will start by going to https://jira.cox.com[JIRA].
 
 image::images/JIRA Startup.jpg[JIRA Startup]
 
-Step 1: Click on Projects dropdown and select View All Projects
-
+. Click on Projects dropdown and select View All Projects
++
 image::images/JIRA View Projects.jpg[View Projects]
 
-Step 2: Type EDOEA into the search box and click EDOEA-ApiManagement
-
+. Type EDOEA into the search box and click EDOEA-ApiManagement
++
 image::images/JIRA Search.jpg[JIRA Search]
 
-Step 3: Select the issue you would like to contribute to OR Create a new issue
-
+. Select the issue you would like to contribute to OR Create a new issue
++
 image::images/Open Issues.jpg[Open Issues]
 
 .. To create a new issue:
-
++
 image::images/Create Issue.jpg[Create Issue]
 
 ... Write a summary
-
++
 image::images/Create Issue 2.jpg[Summary]
 
-.ii. Provide label(s):
+... Provide label(s):
++
  * Suggestion
  * Requirement
  * Open Question
  * Template
- 
++
 image::images/Create Issue 3.jpg[Label]
- 
-iii. Click Create to save it
 
+... Click Create to save it
++
 image::images/Create Issue 4.jpg[Create]
