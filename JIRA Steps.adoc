@@ -20,9 +20,50 @@ image::images/Open Issues.jpg[Open Issues]
 +
 image::images/Create Issue.jpg[Create Issue]
 
+... Select EDOEA-ApiManagement as the Project. +
++
+image::images/Create Issue 5.jpg[Project]
+
+... Select the Issue Type:
++
+* Story
+* Epic
+* Task
+* Improvement
+* Test Run
+* Bug
+* Test Scenario
+* Change Request
+* Test Case
++
+image::images/Create Issue 6.jpg[Issue Type]
+
 ... Write a summary
 +
 image::images/Create Issue 2.jpg[Summary]
+
+... If there is an associated Epic to assign the issue to, select the correct Epic Link.
++
+image::images/Create Issue 7.jpg[Epic Link]
+
+... Write your description in Asciidoctor format. This allows the content to be run through the tool-chain and turned into an artifact.
++
+image::images/Create Issue 8.jpg[Description: Visual]
+image::images/Create Issue 9.jpg[Description: Text]
+
+... Select the appropriate Priority:
++
+* Blocker
+* Critical
+* Major
+* Minor
+* Trivial
++
+image::images/Create Issue 10.jpg[Priority]
+
+... Assign the issue to a teammate or yourself by typing in the person's name
++
+image::images/Create Issue 11.jpg[Assignee]
 
 ... Provide label(s):
 +
